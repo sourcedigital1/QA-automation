@@ -21,11 +21,13 @@ public class Hook extends BaseUtil {
 
         softAssert=new SoftAssert();
         DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setCapability("os_version", "10");
-        caps.setCapability("resolution", "1920x1080");
-        caps.setCapability("browser", "Chrome");
-        caps.setCapability("browser_version", "latest");
-        caps.setCapability("os", "Windows");
+
+        caps.setCapability("os_version", "11.0");
+        caps.setCapability("device", "Samsung Galaxy S21");
+        caps.setCapability("real_mobile", "true");
+        caps.setCapability("browserstack.local", "false");
+       //caps.setCapability("browser", "Chrome");
+
         caps.setCapability("name", "Checkout Scenario 00 - Automation using Browser stack"); // test name BStack-[Java] Sample Test
         caps.setCapability("build", "BStack Build Number 1"); // CI/CD job or build name
         driver = new RemoteWebDriver(new URL(url), caps);
