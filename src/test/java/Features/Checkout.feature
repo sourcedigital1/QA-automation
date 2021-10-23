@@ -1,5 +1,5 @@
 Feature: To test checkout functionality of given activation id
-  This is the activation URL: https://experience-stg.sourcesync.io/44
+  This is the activation URL: https://experience-stg.sourcesync.io/44 and this works well
   Scenario Outline: Verify checkout and of given activation id
     Given Execute "<activation>" and check and click "<timeLineText>"
     And I click Add to cart button
